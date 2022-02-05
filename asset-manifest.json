@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-snake-game/static/css/main.a4c2184e.css",
+    "main.js": "/react-snake-game/static/js/main.fc7b6c34.js",
+    "index.html": "/react-snake-game/index.html",
+    "main.a4c2184e.css.map": "/react-snake-game/static/css/main.a4c2184e.css.map",
+    "main.fc7b6c34.js.map": "/react-snake-game/static/js/main.fc7b6c34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4c2184e.css",
+    "static/js/main.fc7b6c34.js"
+  ]
+}
