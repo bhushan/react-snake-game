@@ -9,6 +9,8 @@ import {
   DIRECTIONS,
 } from "./constants";
 
+import "./App.css";
+
 const App = () => {
   const canvasRef: { current: any } = useRef();
   const [snake, setSnake] = useState(SNAKE_START);
@@ -91,13 +93,15 @@ const App = () => {
   }, [snake, apple, gameOver]);
 
   return (
-    <div role="button" tabIndex={0} onKeyDown={(e) => moveSnake(e)}>
-      <canvas
-        style={{ border: "1px solid black" }}
-        ref={canvasRef}
-        width={`${CANVAS_SIZE[0]}px`}
-        height={`${CANVAS_SIZE[1]}px`}
-      />
+    <div className="container">
+      <div role="button" tabIndex={0} onKeyDown={(e) => moveSnake(e)}>
+        <canvas
+          style={{ border: "1px solid black" }}
+          ref={canvasRef}
+          width={`${CANVAS_SIZE[0]}px`}
+          height={`${CANVAS_SIZE[1]}px`}
+        />
+      </div>
       {gameOver && <div>GAME OVER!</div>}
       <button onClick={startGame}>Start Game</button>
     </div>
