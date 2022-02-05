@@ -25,6 +25,10 @@ const App = () => {
   };
 
   const moveSnake = ({ keyCode }: { keyCode: number }) => {
+    if (speed === null) {
+      startGame();
+    }
+
     const dir = DIRECTIONS.find((d) => d.key === keyCode);
     dir && setDir(dir.value);
   };
